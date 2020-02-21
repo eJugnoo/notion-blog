@@ -1,3 +1,3 @@
-const main = require('../src/lib/notion/createTable')
+const main = require('../lib/notion/createTable')
 
 main()

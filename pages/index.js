@@ -30,7 +30,10 @@ export default class extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-light bg-light">
+        <nav
+          className="navbar navbar-light bg-light"
+          style={{ backgroundColor: '#e3f2fd' }}
+        >
           <div className="container">
             <a className="navbar-brand" href="#">
               Process Automation Lifecycle
