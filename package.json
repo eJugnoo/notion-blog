@@ -1,9 +1,9 @@
 {
-  "name": "notion-blog",
+  "name": "crypton-process-charts",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
+    "dev": "NODE_ENV=development node index.js",
+    "start": "node index.js",
     "build": "next build && node .next/serverless/scripts/build-rss.js",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore"
   },
@@ -14,8 +14,20 @@
   },
   "dependencies": {
     "@zeit/react-jsx-parser": "^2.0.0",
+    "connect-mongo": "^2.0.3",
+    "dotenv": "^6.1.0",
+    "express-session": "^1.15.6",
     "github-slugger": "^1.2.1",
+    "mongodb": "^3.1.10",
+    "nedb": "^1.8.0",
     "next": "^9.2.2-canary.3",
+    "next-auth": "^1.12.1",
+    "nodemailer": "^4.7.0",
+    "nodemailer-direct-transport": "^3.3.2",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-twitter": "^1.0.4",
     "prismjs": "^1.17.1",
     "react": "16.12.0",
     "react-dom": "16.12.0"
@@ -27,5 +39,9 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.4"
+  },
+  "now": {
+    "name": "crypton-process-charts",
+    "alias": "crypton-process-charts.now.sh"
   }
 }
